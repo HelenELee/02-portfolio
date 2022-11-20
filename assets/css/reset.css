@@ -40,5 +40,6 @@ code {
 ​ol,
 ul {
   list-style: none;
+  font-style:normal;
 }
 

@@ -3,11 +3,12 @@
     --light-turquoise: #AFEEEE;
     --celeste: #b2ffff;
     --turquoise: #A0E0D0;
-    --turquiose-blue: #00FFEF;
+    --turquoise-blue: #00FFEF;
+    --aqua: #00FFFF;
 }
  
 * {
-    border: solid 1px;
+    border: solid 0px;
 }
 html {
     /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
@@ -22,14 +23,13 @@ body {
     /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
     font-size: 1.75rem;
     line-height: 1.5;
+    
 }
 
 h1,
 h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h3,
+   {
     margin-bottom: 0.625rem;
     /*color: var(--heliotrope);*/
     font-weight: 700;
@@ -42,27 +42,54 @@ h2,
   }
   
   h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+    float: right;
   }
   
   h3 {
-    font-size: 2rem;
-  }
-  
-  h4 {
     font-size: 1.5rem;
   }
   
-  h5 {
+  h4 {
     font-size: 1rem;
   }
+
+  nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-size: 20px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+ }
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    /*color: var(--aqua);*/
+}
   
-  h6 {
-    font-size: 0.5rem;
-  }
-  
+nav ul li a {
+    color: white;
+    text-underline-offset: 1rem;
+}
+
+nav ul li a:hover {
+    color: var(--aqua);
+    /*text-underline-offset: 1rem;*/
+}
+
 .page-header { 
-    padding: 0px;
+    padding: 0px 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--space-grey);
     color: #ffffff;
@@ -89,6 +116,9 @@ figure {
    right: 16px;
 }
  
+main{
+    margin: 0px 50px 0px 50px;
+}
 .section-container {
     display: flex;
     flex-direction: row;
@@ -96,13 +126,22 @@ figure {
     justify-content: flex-start;
     align-items: center;
     align-content: stretch;
+    width: 100%;
 }  
 
 .section-header {
     width: 20%;
+    margin-right: 20px;
+    padding-right: 20px;
+    /*border-right: solid 3px var(--turquoise-blue);*/
+    border-right: solid 3px var(--aqua);
     /*vertical-align:top;
     padding-top: 0px;
     top: 0px;*/
+}
+
+.aboutme-text {
+    /*width: 80%;*/
 }
 
 .work-column {
@@ -111,12 +150,35 @@ figure {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-	align-content: stretch;
-    /*width: 100%;*/
+	/*align-content: stretch;*/
+    /*width: 80%;*/
 }
 
 article {
-    width: 50%;
+    position: relative;
+    display: inline;
+    border: solid 5px var(--aqua);
+    padding: 0px;
+    flex: 1 0 50%
+}
+
+article img {
+    display: inline;
+}
+
+article:hover {
+    box-shadow: inset 0px 0px 10px var(--aqua), 0 0 25px var(--aqua);
+}
+.first-work-item {
+    flex: 1 0 100%;
+}
+.work-heading {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background-color: var(--aqua);
+    border: 1px solid var(--aqua);
+    border-radius: 0 12px 12px 0;
 }
 
  .page-titlex {
@@ -131,36 +193,19 @@ article {
     padding: 1rem;
    /* text-align: center;*/
   }
-  nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /*font-size: 20px;*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: stretch;
- }
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+  
+footer {
+    margin: 50px 50px 150px 50px;
 }
 
 address {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     align-content: stretch;
+    /*width: 80%;*/
     }
 
 address ul {
@@ -171,4 +216,39 @@ address ul li {
     display: inline-block;
     margin-left: 25px;
 }
+  
+address ul li a {
+    /*color: var(--aqua);*/
+    text-decoration:underline;
+    text-underline-offset: 1rem;
+    font-style:normal;
+}
+    
+    /* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    nav {
+        background-color: green;
+      }
+    article {
+        flex: 1 0 50%;
+    }
+    /* select the first child to grow to full width if it has space to grow */
+    .work-column:first-child {
+        flex-grow: 1 0 100%;
+      }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: orange;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    nav {
+        background-color: red;
+      }
+  }
   
