@@ -58,6 +58,8 @@ h3,
   .image-blurred{
     border-radius: 30%;
     box-shadow: 0 0 18px 18px var(--space-grey) inset;
+    margin-left: 5px;
+    border-left: 0px;
   }
 
   nav {
@@ -133,6 +135,7 @@ main{
     align-items: center;
     align-content: stretch;
     width: 100%;
+    margin: 20px;
 }  
 
 .section-header {
@@ -147,7 +150,7 @@ main{
 }
 
 .aboutme-text {
-    width: 80%;
+    width: 60%;
 }
 
 .work-column {
@@ -157,26 +160,28 @@ main{
 	justify-content: flex-start;
 	align-items: center;
 	/*align-content: stretch;*/
-    width: 80%;
+    width: 63%;
 }
 
 article {
     position: relative;
     display: inline;
-    border: solid 5px var(--aqua);
+    border: none 5px var(--aqua);
     padding: 0px;
-    flex: 1 0 50%
+    /*flex: 1 0 50%;*/
+    flex: 1 0 200px;
 }
 
 article img {
-    display: inline;
+    display: inline;      
 }
 
-article:hover {
-    box-shadow: inset 0px 0px 10px var(--aqua), 0 0 25px var(--aqua);
+article img:hover {
+    box-shadow: inset 0px 0px 10px var(--space-grey), 0 0 25px var(--space-grey);
 }
 .first-work-item {
-    flex: 1 0 100%;
+   /* flex: 1 0 100%;*/
+   flex: 1 0 400px;
 }
 .work-heading {
     position: absolute;
@@ -212,11 +217,12 @@ address {
     justify-content: center;
     align-items: center;
     align-content: stretch;
-    width: 80%;
+    width: 60%;
     }
 
 address ul {
     list-style-type: none;
+    
 }
     
 address ul li {
@@ -229,10 +235,19 @@ address ul li a {
     text-decoration:underline;
     text-underline-offset: 1rem;
     font-style:normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
-    
+   
+.contact-icon {
+    vertical-align: middle;
+}
+
     /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
+    /*just changing colour for testing*/
     nav {
         background-color: green;
       }
@@ -240,8 +255,8 @@ address ul li a {
         flex: 1 0 50%;
     }
     /* select the first child to grow to full width if it has space to grow */
-    .work-column:first-child {
-        flex-grow: 1 0 100%;
+    .first-work-item {
+        flex: 1 0 100%;
       }
   }
   
@@ -250,12 +265,54 @@ address ul li a {
     nav {
       background-color: orange;
     }
+
+    article {
+        flex: 50%;
+    }
+
+    .first-work-item {
+        flex: 100%;
+      }
+
+    #header-pattern {
+     display: none;
+     visibility: hidden;
+    }
+
+    #accessibility-image {
+        width: 400px;
+      }
   }
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
     nav {
         background-color: red;
+      }
+
+      article {
+        flex: 50%;
+     }
+
+      .first-work-item {
+        flex: 100%;
+      }
+
+      #accessibility-image {
+        width: 400px;
+      }
+
+      .work-image {
+        width: 200px;
+      }
+
+      #header-pattern {
+        display: none;
+        visibility: hidden;
+      }
+
+      .contact-text {
+        display:none;
       }
   }
   
