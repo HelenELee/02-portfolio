@@ -1,11 +1,12 @@
 :root {
     --space-grey: #33393f;
-    --light-turquoise: #AFEEEE;
+    --light-grey: #F0F0F0;
+    /*--light-turquoise: #AFEEEE;
     --celeste: #b2ffff;
     --turquoise: #A0E0D0;
     --turquoise-blue: #00FFEF;
-    --aqua: #D3D3D3;
-    /*--aqua: #00FFFF;*
+    --aqua: #D3D3D3;*/
+    /*--aqua: #00FFFF;*/
 }
  
 * {
@@ -187,8 +188,8 @@ article img:hover {
     position: absolute;
     bottom: 20px;
     left: 0px;
-    background-color: var(--aqua);
-    background-color: white;
+    background-color: var(--light-grey);
+    /*background-color: white;*/
     border: 1px solid var(--aqua);
     border-radius: 0 12px 12px 0;
 }
@@ -241,6 +242,9 @@ address ul li a {
     line-height: 1.5;
 }
    
+address ul li a:visited {
+    color: black;
+}
 .contact-icon {
     vertical-align: middle;
 }
