@@ -4,7 +4,8 @@
     --celeste: #b2ffff;
     --turquoise: #A0E0D0;
     --turquoise-blue: #00FFEF;
-    --aqua: #00FFFF;
+    --aqua: #D3D3D3;
+    /*--aqua: #00FFFF;*
 }
  
 * {
@@ -52,6 +53,11 @@ h3,
   
   h4 {
     font-size: 1rem;
+  }
+
+  .image-blurred{
+    border-radius: 30%;
+    box-shadow: 0 0 18px 18px var(--space-grey) inset;
   }
 
   nav {
@@ -141,7 +147,7 @@ main{
 }
 
 .aboutme-text {
-    /*width: 80%;*/
+    width: 80%;
 }
 
 .work-column {
@@ -151,7 +157,7 @@ main{
 	justify-content: flex-start;
 	align-items: center;
 	/*align-content: stretch;*/
-    /*width: 80%;*/
+    width: 80%;
 }
 
 article {
@@ -177,6 +183,7 @@ article:hover {
     bottom: 20px;
     left: 0px;
     background-color: var(--aqua);
+    background-color: white;
     border: 1px solid var(--aqua);
     border-radius: 0 12px 12px 0;
 }
@@ -205,7 +212,7 @@ address {
     justify-content: center;
     align-items: center;
     align-content: stretch;
-    /*width: 80%;*/
+    width: 80%;
     }
 
 address ul {
