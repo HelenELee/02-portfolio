@@ -91,10 +91,12 @@ li {
   display: inline-block;
   
 }
+
 nav ul li {
   margin-left: 25px;
 }
   
+/*keep links in nav white*/
 nav ul li a, nav ul li a:visited {
   color: var(--white);
   text-underline-offset: 1rem;
@@ -183,9 +185,7 @@ footer {
   width: 60%;
 }
 
-a:visited {
-  color: var(--black);
-}
+
 
 @media screen and (max-width: 992px) {
     
