@@ -1,4 +1,4 @@
-# 02 Portfolio
+# Helen Lee Portfolio
 
 ## Description
 This web page was developed to show case my web development skills to potential employers and also to practice these skills. In particular it demonstrates HTML and CSS skills.
