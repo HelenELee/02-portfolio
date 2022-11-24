@@ -10,10 +10,7 @@
 * {
     border: solid 0px;
 }
-/*ensure all links are black*/
-a:link {
-    color: var(--black);
-}
+
 
 html {
     /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
@@ -101,6 +98,7 @@ nav ul li a, nav ul li a:visited {
   color: var(--white);
   text-underline-offset: 1rem;
 }
+
 /*create circular photo, slightly soften the edge */
 .photo { 
   border-radius: 50%; 
