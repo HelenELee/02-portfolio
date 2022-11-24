@@ -153,7 +153,7 @@ article img:hover {
 }
 
 article a:visited {
-  color: black;
+  color: var(--black);
 }
 
 /*ensures first work images is largest*/
@@ -184,7 +184,7 @@ footer {
 }
 
 a:visited {
-  color: black;
+  color: var(--black);
 }
 
 @media screen and (max-width: 992px) {
