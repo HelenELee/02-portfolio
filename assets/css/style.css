@@ -148,7 +148,7 @@ article img {
   width: 100%;  
 }
 /*create blur effect when hover over work images */
-article img:hover {
+article img:hover, address img:hover{
   box-shadow: inset 0px 0px 10px var(--space-grey), 0 0 25px var(--space-grey);
 }
 
