@@ -25,7 +25,7 @@ You can click on each icon in the "work" area to view my work.
 
 Below is a screenshot of the website. 
 
-![Image](./assets/images/Helen Lee Portfolio.jpg?raw=true "Screenshot")
+![Image](./assets/images/Helen Lee Portfolio.png?raw=true "Screenshot")
 
 [To view my portfolio website click here.](https://helenelee.github.io/helen-lee-portfolio/)
 
