@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
+  <title>Helen Lee - Portfolio</title>
+  <link rel="stylesheet" href=".assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <header class="page-header">
-        
-        <img src="./assets/images/HelenLee.jpg" alt="Helen Lee head shot" class="image-blurred">
+    <!--contains photo and navigation-->
+    <header class="page-header nav-container flex-parent">
+        <img src="./assets/images/HelenLee.jpg" alt="Helen Lee head shot" class="photo">
         <h1 class="page-title">Hi, I'm Helen Lee</h1> 
         <nav>
             <ul>
@@ -21,11 +21,11 @@
                 <li><a href="#contactme">Contact me</a></li>
             </ul>
         </nav>
-        
-        
     </header>
+    
     <main>
-        <section class="section-container" id="aboutme">
+        <!--About me-->
+        <section class="section-container flex-parent" id="aboutme">
             <header class="section-header">
                 <h2>About me</h2>
             </header>
@@ -35,11 +35,14 @@
                 Loves to keep learning and welcomes new challenges! Looking for new opportunities to leverage and enhance my full stack developer skills.
             </p>
         </section>
-        <section class="section-container" id="work">
+        <!--Work-->
+        <section class="section-container flex-parent" id="work">
             <header class="section-header">
                 <h2>Work</h2>
             </header>
-            <div class="work-column">
+            <!---use flex to align work images-->
+            <div class="work-column flex-parent">
+                <!--first image is largest-->
                 <article class="first-work-item">
                     <a href="https://helenelee.github.io/01-accessibility-challenge/">
                     <img src="./assets/images/horiseon-lg.png" alt="accessibility logo"/ id="accessibility-image">
@@ -86,12 +89,14 @@
             </div>
         </section>
     </main>
+    <!--Contact me-->
     <footer>
-        <section class="section-container" id="contactme">
+        <section class="section-container flex-parent" id="contactme">
             <header class="section-header">
                 <h2>Contact me</h2>
             </header>
-            <address>
+            <!--use flex to align contact images-->
+            <address class="flex-parent address-flex-centre">
                 <ul>
                     <li><a href="tel:+61400300200"><img src="./assets/images/phone.png" alt="phone number"/></a></li>
                     <li><a href="mailto:helenelee3@outlook.com"><img src="./assets/images/email.png" / alt="email address"></a></li>

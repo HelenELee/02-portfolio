@@ -29,7 +29,7 @@ Below is a screenshot of the website.
 
 ## Credits
 
-Would like to thank the instructors at UWA Bootcamp.
+Would like to thank the instructors at UWA Bootcamp. I obtained free images from unsplash.com. Thanks to Claudio Swartx, Ferenc Almasi, Kobu Agency
 
 ## License
 
